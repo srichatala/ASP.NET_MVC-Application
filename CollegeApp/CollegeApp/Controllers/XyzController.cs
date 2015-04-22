@@ -1,4 +1,5 @@
 ﻿using CollegeApp.Models;
+using CollegeApp.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,9 @@ namespace CollegeApp.Controllers
         // GET: Xyz
         public ActionResult Index()
         {
+            Course ObjCourse = new Course();
+            ObjCourse.CourseName = "Java";
+            ObjCourse.TotalGrade = 80;
             //Send model data to view by using this controller
             Student Stu1 = new Student();
             Stu1.Name = "Sinivas";
@@ -33,7 +37,11 @@ namespace CollegeApp.Controllers
             AllStu.Add(Stu1);
             AllStu.Add(Stu2);
             AllStu.Add(Stu3);
-            return View(AllStu);
+
+            Course_Student objCourse_Student = new Course_Student();
+            objCourse_Student.Courses = ObjCourse;
+            objCourse_Student.Students = AllStu;
+            return View(objCourse_Student);
         }
     }
 }

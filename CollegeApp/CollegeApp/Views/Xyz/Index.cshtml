@@ -1,14 +1,19 @@
-﻿@model IEnumerable<CollegeApp.Models.Student>
+﻿@model CollegeApp.ViewModel.Course_Student
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
-
-@foreach (var item in Model)
+<h2>Course Info</h2>
+<b>Course Name:</b>@Model.Courses.CourseName<br />
+<b>Total Grade:</b>@Model.Courses.TotalGrade<br />
+<hr />
+<h3>Student Details</h3>
+@foreach (var item in Model.Students)
 {
-    <h3>Student Details</h3>
+    <hr />
     <b>Student Name:</b>@item.Name<br />
         <b>Student Address:</b>@item.Address<br />
         <b>Student PhoneNo:</b>@item.PhoneNo<br />
+        
 }
