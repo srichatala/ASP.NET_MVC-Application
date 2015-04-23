@@ -10,5 +10,7 @@ namespace CollegeApp.Models
         public int CourseId { get; set; }
         public string CourseName { get; set; }
         public int TotalGrade { get; set; }
+
+        public ICollection<Enrollment> Enrollments { get; set; }
     }
 }

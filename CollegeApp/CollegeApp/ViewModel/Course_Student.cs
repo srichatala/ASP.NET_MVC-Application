@@ -8,7 +8,8 @@ namespace CollegeApp.ViewModel
 {
     public class Course_Student
     {
-        public Course Courses { get; set; }
+        public List<Course> Courses { get; set; }
         public List<Student> Students { get; set; }
+        public List<Enrollment> Enrollments { get; set; }
     }
 }

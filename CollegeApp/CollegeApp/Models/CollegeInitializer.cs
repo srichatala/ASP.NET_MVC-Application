@@ -28,6 +28,37 @@ namespace CollegeApp.Models
                 context.Studetns.Add(item);
             }
             context.SaveChanges();
+
+            var courses = new List<Course>{
+                new Course{
+                    CourseName="Java",
+                    TotalGrade= 8
+                },
+                 new Course{
+                    CourseName="C#.Net",
+                    TotalGrade= 8
+                }
+            };
+            foreach (var item in courses) {
+                context.Courses.Add(item);
+            }
+            context.SaveChanges();
+
+            var enrollments = new List<Enrollment>{
+                new Enrollment{
+                    StudentId=1,
+                    CourseId=1,
+                    Grade=4
+                }, new Enrollment{
+                    StudentId=2,
+                    CourseId=2,
+                    Grade=5
+                }
+            };
+            foreach (var item in enrollments) {
+                context.Enrollments.Add(item);
+            }
+            context.SaveChanges();
         }
     }
 }
