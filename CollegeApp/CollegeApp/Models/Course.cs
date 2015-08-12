@@ -13,4 +13,5 @@ namespace CollegeApp.Models
 
         public ICollection<Enrollment> Enrollments { get; set; }
     }
-}
+
+}   
