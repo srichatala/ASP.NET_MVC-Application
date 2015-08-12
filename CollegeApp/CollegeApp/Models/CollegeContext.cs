@@ -18,5 +18,7 @@ namespace CollegeApp.Models
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
+
+        public System.Data.Entity.DbSet<CollegeApp.Models.Faculty> Faculties { get; set; }
     }
 }
