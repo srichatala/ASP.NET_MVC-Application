@@ -15,5 +15,15 @@ namespace CollegeApp.Controllers
         {
             return View(db.Faculties.ToList());
         }
+        [HttpGet]
+        public ActionResult Create() {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Create(Faculty faculty) {
+            db.Faculties.Add(faculty);
+            db.SaveChanges();
+            return Redirect("Index");
+        }
     }
 }
