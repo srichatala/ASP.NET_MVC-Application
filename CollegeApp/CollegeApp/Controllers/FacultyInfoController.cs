@@ -21,9 +21,12 @@ namespace CollegeApp.Controllers
         }
         [HttpPost]
         public ActionResult Create(Faculty faculty) {
-            db.Faculties.Add(faculty);
-            db.SaveChanges();
-            return Redirect("Index");
+            if (ModelState.IsValid) {
+                db.Faculties.Add(faculty);
+                db.SaveChanges();
+                return Redirect("Index");
+            }
+            return View(faculty);
         }
     }
 }
