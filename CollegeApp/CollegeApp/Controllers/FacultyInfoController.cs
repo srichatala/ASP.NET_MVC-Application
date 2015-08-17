@@ -28,5 +28,10 @@ namespace CollegeApp.Controllers
             }
             return View(faculty);
         }
+
+        [HttpGet]
+        public ActionResult Edit() {
+            return View();
+        }
     }
 }
