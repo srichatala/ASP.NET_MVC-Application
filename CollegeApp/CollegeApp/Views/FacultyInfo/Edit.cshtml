@@ -4,12 +4,56 @@
 }
 
 <h2>Edit</h2>
-
-@Model.FacultyID
-@Model.FirstName
-@Model.LastName
-@Model.Qualification
-@Model.Salary
-@Model.Age
-
-@Html.ActionLink("Back to List","index")
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h4>Faculty</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.FacultyID)
+        <div class="form-group">
+            @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FirstName, new { htmlattributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LastName, new { htmlattributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Qualification, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(modle => modle.Qualification, new { htmlattributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(modle => modle.Qualification, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(modle => modle.Salary, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(modle => modle.Salary, new { htmlattributes = new { @class="form-control"} })
+                @Html.ValidationMessageFor(modle => modle.Salary, "", new { @class="text-danger"})
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(modle => modle.Age, htmlAttributes: new { @class="control label col-md-2"})
+            <div class="col-md-10">
+                @Html.EditorFor(modle => modle.Age, new { htmlattribute = new { @class="fomr-control"} })
+                @Html.ValidationMessageFor(model => model.Age, "", new { @class="text-danger"})
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10"> 
+                <input type="submit" value="Submit" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("Back to List", "index")
+</div>
