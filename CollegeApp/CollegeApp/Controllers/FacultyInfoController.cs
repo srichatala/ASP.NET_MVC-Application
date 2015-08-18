@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -30,8 +31,17 @@ namespace CollegeApp.Controllers
         }
 
         [HttpGet]
-        public ActionResult Edit() {
-            return View();
+        public ActionResult Edit(int? id) {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Faculty faculty = db.Faculties.Find(id);
+            if (faculty == null)
+            {
+                return HttpNotFound();
+            }
+            return View(faculty);
         }
     }
 }
