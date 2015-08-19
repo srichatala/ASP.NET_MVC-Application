@@ -68,5 +68,19 @@ namespace CollegeApp.Controllers
             return View(faculty);
         }
 
+        [HttpGet]
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Faculty faculty = db.Faculties.Find(id);
+            if (faculty == null)
+            {
+                return HttpNotFound();
+            }
+            return View(faculty);
+        }
     }
 }
