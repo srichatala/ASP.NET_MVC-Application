@@ -1,6 +1,7 @@
 ﻿using CollegeApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -43,5 +44,29 @@ namespace CollegeApp.Controllers
             }
             return View(faculty);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit([Bind(Include="FacultyID,FirstName,LastName,Qualification,Salary,Age")]Faculty faculty) {
+            if (ModelState.IsValid) {
+                db.Entry(faculty).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(faculty);
+        }
+        [HttpGet]
+        public ActionResult Delete(int? id) {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Faculty faculty = db.Faculties.Find(id);
+            if (faculty == null)
+            {
+                return HttpNotFound();
+            }
+            return View(faculty);
+        }
+
     }
 }

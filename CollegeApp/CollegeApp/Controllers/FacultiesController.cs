@@ -85,7 +85,7 @@ namespace CollegeApp.Controllers
                 db.Entry(faculty).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
-            }
+            }   
             return View(faculty);
         }
 
