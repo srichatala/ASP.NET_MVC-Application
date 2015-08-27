@@ -27,14 +27,14 @@
             </div>
         </div>
         <div class="form-group">
-            @Html.LabelFor(model => model.Age, htmlAttributes: new { @class = "control label col-md-2" })
+            @Html.LabelFor(model => model.Age, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Age, new { htmlattribute = new { @class = "fomr-control" } })
+                @Html.EditorFor(model => model.Age, new { htmlattributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Age, "", new { @class = "text-danger" })
             </div>
         </div>
         <div class="form-group">
-            @Html.LabelFor(model => model.Qualification, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Qualification, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(modle => modle.Qualification, new { htmlattributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(modle => modle.Qualification, "", new { @class = "text-danger" })
