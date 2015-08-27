@@ -184,6 +184,10 @@
     <Compile Include="ViewModel\Course_Student.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\College.mdf" />
+    <Content Include="App_Data\College_log.ldf">
+      <DependentUpon>College.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -251,9 +255,7 @@
     <Content Include="Views\FacultyInfo\Delete.cshtml" />
     <Content Include="Views\FacultyInfo\Details.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
