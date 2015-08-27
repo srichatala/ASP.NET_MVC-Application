@@ -10,17 +10,17 @@ namespace CollegeApp.Models
     public class Faculty
     {
         public int FacultyID { get; set; }
-        [Required]
+        [Required(ErrorMessage="First name required")]
         [DisplayName("First Name")]
         public string FirstName { get; set; }
-        [Required]
+        [Required(ErrorMessage="Last name required")]
         [DisplayName("Last Name")]
         public string LastName { get; set; }
-        [Required]
+        [Required(ErrorMessage="Age required")]
         public int Age { get; set; }
-        [Required]
+        [Required(ErrorMessage="Qualification required")]
         public string Qualification { get; set; }
-        [Required]
+        [Required(ErrorMessage="Salary Required")]
         public decimal Salary { get; set; }
     }
 }
