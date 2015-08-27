@@ -31,6 +31,9 @@ namespace CollegeApp.Models
         [Required(ErrorMessage = "Salary Required")]
         public decimal Salary { get; set; }
 
+        [Required]
+        [DataType(DataType.EmailAddress)]
+        [DisplayName("Email ID")]
         public string Email { get; set; }
     }
 }
