@@ -48,6 +48,7 @@ namespace Coopreport.Models
         public string Cell { get; set; }
 
         [Required]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
 
     }

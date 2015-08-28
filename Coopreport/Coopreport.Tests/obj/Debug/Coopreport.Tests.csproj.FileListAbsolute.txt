@@ -27,3 +27,9 @@ D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tes
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\EntityFramework.SqlServer.dll
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\EntityFramework.xml
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\Glimpse.Ado.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\Glimpse.AspNet.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\Glimpse.Core.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\Glimpse.EF5.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\Glimpse.EF6.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\Glimpse.Mvc5.dll
