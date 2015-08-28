@@ -108,3 +108,8 @@ D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\CollegeApp\CollegeApp\bin
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\CollegeApp\CollegeApp\obj\Debug\CollegeApp.csprojResolveAssemblyReference.cache
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\CollegeApp\CollegeApp\obj\Debug\CollegeApp.dll
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\CollegeApp\CollegeApp\obj\Debug\CollegeApp.pdb
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\CollegeApp\CollegeApp\bin\Glimpse.Ado.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\CollegeApp\CollegeApp\bin\Glimpse.AspNet.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\CollegeApp\CollegeApp\bin\Glimpse.Core.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\CollegeApp\CollegeApp\bin\Glimpse.EF6.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\CollegeApp\CollegeApp\bin\Glimpse.Mvc5.dll
