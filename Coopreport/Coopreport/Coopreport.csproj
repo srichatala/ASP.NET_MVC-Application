@@ -144,7 +144,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\RegistrationController.cs" />
+    <Compile Include="Controllers\RegistrationsController.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -191,8 +191,11 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Registration\Index.cshtml" />
-    <Content Include="Views\Registration\Create.cshtml" />
+    <Content Include="Views\Registrations\Create.cshtml" />
+    <Content Include="Views\Registrations\Delete.cshtml" />
+    <Content Include="Views\Registrations\Details.cshtml" />
+    <Content Include="Views\Registrations\Edit.cshtml" />
+    <Content Include="Views\Registrations\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

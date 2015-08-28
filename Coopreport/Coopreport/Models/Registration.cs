@@ -14,7 +14,7 @@ namespace Coopreport.Models
         public int RegistrationID { get; set; }
 
         [StringLength(9)]
-        [Required]
+        [Required(ErrorMessage = "Student ID required")]
         [DisplayName("Student ID")]
         [RegularExpression("^([0-9 .&'-]+)$", ErrorMessage = "Enter valid student id")]
         public string StudentID { get; set; }
