@@ -23,3 +23,7 @@ D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tes
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\obj\Debug\Coopreport.Tests.csprojResolveAssemblyReference.cache
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\obj\Debug\Coopreport.Tests.dll
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\obj\Debug\Coopreport.Tests.pdb
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\EntityFramework.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\EntityFramework.xml
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\EntityFramework.SqlServer.xml
