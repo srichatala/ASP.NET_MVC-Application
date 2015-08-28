@@ -28,3 +28,9 @@ D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\EntityFramework.SqlServer.dll
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\EntityFramework.xml
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\EntityFramework.SqlServer.xml
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\Glimpse.Ado.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\Glimpse.AspNet.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\Glimpse.Core.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\Glimpse.EF5.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\Glimpse.EF6.dll
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\Glimpse.Mvc5.dll
