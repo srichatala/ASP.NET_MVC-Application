@@ -143,12 +143,19 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdvisorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RegistrationsController.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508281349204_InitialCreate.cs" />
+    <Compile Include="Migrations\201508281349204_InitialCreate.Designer.cs">
+      <DependentUpon>201508281349204_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Advisor.cs" />
     <Compile Include="Models\CoopreportContext.cs" />
     <Compile Include="Models\CoopreportInitializer.cs" />
     <Compile Include="Models\Registration.cs" />
@@ -196,6 +203,11 @@
     <Content Include="Views\Registrations\Details.cshtml" />
     <Content Include="Views\Registrations\Edit.cshtml" />
     <Content Include="Views\Registrations\Index.cshtml" />
+    <Content Include="Views\Advisors\Create.cshtml" />
+    <Content Include="Views\Advisors\Delete.cshtml" />
+    <Content Include="Views\Advisors\Details.cshtml" />
+    <Content Include="Views\Advisors\Edit.cshtml" />
+    <Content Include="Views\Advisors\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -206,6 +218,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201508281349204_InitialCreate.resx">
+      <DependentUpon>201508281349204_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

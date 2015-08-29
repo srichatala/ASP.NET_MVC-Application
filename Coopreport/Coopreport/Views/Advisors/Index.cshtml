@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Coopreport.Models.Advisor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AdvisorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACell)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AArea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AUsername)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APassword)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdvisorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACell)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AArea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AUsername)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APassword)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AdvisorID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AdvisorID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AdvisorID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -15,5 +15,7 @@ namespace Coopreport.Models
         {
             modelBuilder.Conventions.Remove<PluralizingEntitySetNameConvention>();
         }
+
+        public System.Data.Entity.DbSet<Coopreport.Models.Advisor> Advisor { get; set; }
     }
 }
