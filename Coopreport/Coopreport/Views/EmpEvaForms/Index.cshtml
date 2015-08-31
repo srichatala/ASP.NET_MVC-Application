@@ -1,0 +1,231 @@
+﻿@model IEnumerable<Coopreport.Models.EmpEvaForm>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Organization)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Term)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InterestInWork)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AbilityToLearn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QualityofWork)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProblemSolving)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TeamWork)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dependability)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ResponseToSupervision)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Reflection)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Resoursefulness)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EthicalBehaviour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AppreciationofDiversity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnterpreneurialOrientation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WrittenCommunication)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OralCommuniation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InterpersonalCommunication)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OverallPerformanceRating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SupervisorsComments)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SupervisorsRecommendations)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NextWorkTerm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OfferNextWorkTerm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OfferStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NextWorkTermFrom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NextWorkTermTo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SupervisorsName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SupervisorsTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Currentdate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ManagerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Questionnaires)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Organization)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Term)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.year)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InterestInWork)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AbilityToLearn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QualityofWork)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProblemSolving)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TeamWork)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dependability)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ResponseToSupervision)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reflection)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Resoursefulness)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EthicalBehaviour)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppreciationofDiversity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnterpreneurialOrientation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WrittenCommunication)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OralCommuniation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InterpersonalCommunication)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OverallPerformanceRating)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SupervisorsComments)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SupervisorsRecommendations)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NextWorkTerm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OfferNextWorkTerm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OfferStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NextWorkTermFrom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NextWorkTermTo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SupervisorsName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SupervisorsTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Currentdate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ManagerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Questionnaires)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EmpEvaFormId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EmpEvaFormId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EmpEvaFormId })
+        </td>
+    </tr>
+}
+
+</table>

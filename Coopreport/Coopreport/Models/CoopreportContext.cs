@@ -11,11 +11,9 @@ namespace Coopreport.Models
     {
         public DbSet<Registration> Registrations { get; set; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder.Conventions.Remove<PluralizingEntitySetNameConvention>();
-        }
-
         public System.Data.Entity.DbSet<Coopreport.Models.Advisor> Advisor { get; set; }
+
+        public System.Data.Entity.DbSet<Coopreport.Models.EmpEvaForm> EmpEvaForm { get; set; }
+
     }
 }
