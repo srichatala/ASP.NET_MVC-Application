@@ -21,9 +21,26 @@ namespace Coopreport.Controllers
             return View();
         }
 
-        [HttpPost]
+        [HttpGet]
         public ActionResult Login(User user)
         {
+            return View();
+        }
+
+        public ActionResult Register()
+        {
+            return View();
+        }   
+
+        [HttpPost]
+        public ActionResult Register(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                db_context.User.Add(user);
+                db_context.SaveChanges();
+                return Redirect("Login");
+            }
             return View();
         }
     }
