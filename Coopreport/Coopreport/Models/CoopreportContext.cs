@@ -11,9 +11,9 @@ namespace Coopreport.Models
     {
         public DbSet<Registration> Registrations { get; set; }
 
-        public System.Data.Entity.DbSet<Coopreport.Models.Advisor> Advisor { get; set; }
+        public DbSet<Advisor> Advisor { get; set; }
 
-        public System.Data.Entity.DbSet<Coopreport.Models.EmpEvaForm> EmpEvaForm { get; set; }
+        public DbSet<EmpEvaForm> EmpEvaForm { get; set; }
 
     }
 }
