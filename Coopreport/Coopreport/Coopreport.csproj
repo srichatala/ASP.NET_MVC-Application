@@ -144,18 +144,17 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\RegistrationsController.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Advisor.cs" />
-    <Compile Include="Models\CoopreportContext.cs" />
-    <Compile Include="Models\EmpEvaForm.cs" />
-    <Compile Include="Models\Registration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Coopreport.mdf" />
+    <Content Include="App_Data\Coopreport_log.ldf">
+      <DependentUpon>Coopreport.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -192,24 +191,9 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Registrations\Create.cshtml" />
-    <Content Include="Views\Registrations\Delete.cshtml" />
-    <Content Include="Views\Registrations\Details.cshtml" />
-    <Content Include="Views\Registrations\Edit.cshtml" />
-    <Content Include="Views\Registrations\Index.cshtml" />
-    <Content Include="Views\Advisors\Create.cshtml" />
-    <Content Include="Views\Advisors\Delete.cshtml" />
-    <Content Include="Views\Advisors\Details.cshtml" />
-    <Content Include="Views\Advisors\Edit.cshtml" />
-    <Content Include="Views\Advisors\Index.cshtml" />
-    <Content Include="Views\EmpEvaForms\Create.cshtml" />
-    <Content Include="Views\EmpEvaForms\Delete.cshtml" />
-    <Content Include="Views\EmpEvaForms\Details.cshtml" />
-    <Content Include="Views\EmpEvaForms\Edit.cshtml" />
-    <Content Include="Views\EmpEvaForms\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
