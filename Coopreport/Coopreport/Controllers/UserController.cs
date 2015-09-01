@@ -15,5 +15,16 @@ namespace Coopreport.Controllers
         {
             return View(db_context.User.ToList());
         }
+
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Login(User user)
+        {
+            return View();
+        }
     }
 }
