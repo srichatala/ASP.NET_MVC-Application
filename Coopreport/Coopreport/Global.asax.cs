@@ -14,7 +14,7 @@ namespace Coopreport
     {
         protected void Application_Start()
         {
-            Database.SetInitializer<CoopreportContext>(new CoopreportInitializer());
+            //Database.SetInitializer<CoopreportContext>(new CoopreportInitializer());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
