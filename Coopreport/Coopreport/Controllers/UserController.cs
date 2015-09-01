@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Coopreport.Models;
+using System.Web.Security;
 
 namespace Coopreport.Controllers
 {
@@ -21,16 +22,33 @@ namespace Coopreport.Controllers
             return View();
         }
 
-        [HttpGet]
+        [HttpPost]
         public ActionResult Login(User user)
         {
-            return View();
+            var login = db_context.User.Where(x => x.Username == user.Username && x.Password == user.Password).Count();
+            if (login != 0)
+            {
+                FormsAuthentication.SetAuthCookie(user.Username, false);
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                ViewBag.Msg = "Invalid User Credentials";
+                return View();
+            }
+
+        }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Home");
         }
 
         public ActionResult Register()
         {
             return View();
-        }   
+        }
 
         [HttpPost]
         public ActionResult Register(User user)
