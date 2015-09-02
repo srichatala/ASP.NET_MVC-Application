@@ -12,7 +12,7 @@ namespace Coopreport.Models
         public int UserID { get; set; }
         [Required]
         [StringLength(10)]
-        [DisplayName("User Name")]
+        [DisplayName("Student ID/Employee ID")]
         public string Username { get; set; }
         [Required]
         [StringLength(8)]

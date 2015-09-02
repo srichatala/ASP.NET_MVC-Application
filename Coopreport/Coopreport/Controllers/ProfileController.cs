@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Coopreport.Controllers
 {
-    [Authorize(Roles="Student")]
+    [Authorize(Roles="Student,Admin")]
     public class ProfileController : Controller
     {
         // GET: Profile

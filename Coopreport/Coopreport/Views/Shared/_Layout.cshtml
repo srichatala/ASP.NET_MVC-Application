@@ -23,7 +23,10 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     @if (User.Identity.IsAuthenticated)
                     {
+                        //if (User.IsInRole("Student"))
+                        //{
                         <li>@Html.ActionLink("Profile", "Index", "Profile")</li>
+                        //}
                     }
                     else
                     {
