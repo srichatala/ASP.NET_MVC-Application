@@ -9,5 +9,6 @@ namespace Coopreport.Models
     public class CoopreportContext : DbContext
     {
         public DbSet<User> User { get; set; }
+        public DbSet<Profile> Profile { get; set; }
     }
 }

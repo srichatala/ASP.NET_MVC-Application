@@ -20,5 +20,7 @@ namespace Coopreport.Models
         public string Password { get; set; }
         [Required]
         public string Role { get; set; }
+
+        public virtual Profile Profile { get; set; }
     }
 }

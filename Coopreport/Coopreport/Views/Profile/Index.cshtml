@@ -1,7 +1,51 @@
-﻿
+﻿@model Coopreport.Models.Profile
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Student Profile</h2>
+<dl class="dl-horizontal">
+    <dt>
+        @Html.DisplayNameFor(m => m.UserID)
+    </dt>
+    <dd>
+        @Html.DisplayFor(m => m.UserID)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(m => m.FirstName)
+    </dt>
+    <dd>
+        @Html.DisplayFor(m => m.FirstName)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(m => m.LastName)
+    </dt>
+    <dd>
+        @Html.DisplayFor(m => m.LastName)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(m => m.Email)
+    </dt>
+    <dd>
+        @Html.DisplayFor(m => m.Email)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(m => m.PhoneNo)
+    </dt>
+    <dd>
+        @Html.DisplayFor(m => m.PhoneNo)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(m => m.Course)
+    </dt>
+    <dd>
+        @Html.DisplayFor(m => m.Course)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(m => m.UserID)
+    </dt>
+    <dd>
+        @Html.DisplayFor(m => m.UserID)
+    </dd>
+</dl>         
 
