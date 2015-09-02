@@ -24,6 +24,7 @@ namespace Coopreport.Controllers
 
         public ActionResult Create()
         {
+            ViewBag.name = User.Identity.Name;
             return View();
         }
 

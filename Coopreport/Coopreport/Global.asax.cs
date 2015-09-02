@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Coopreport.Models;
 
 namespace Coopreport
 {
@@ -13,6 +14,7 @@ namespace Coopreport
     {
         protected void Application_Start()
         {
+            Database.SetInitializer<CoopreportContext>(new CoopreportInitializer());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

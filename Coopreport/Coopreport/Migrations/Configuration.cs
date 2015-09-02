@@ -9,8 +9,7 @@ namespace Coopreport.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
-            ContextKey = "Coopreport.Models.CoopreportContext";
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(Coopreport.Models.CoopreportContext context)
