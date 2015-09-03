@@ -17,9 +17,6 @@ namespace Coopreport.Models
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
-            modelBuilder.Entity<Profile>()
-           .HasKey(e => e.UserID);
-
             // Configure StudentId as FK for StudentAddress
             modelBuilder.Entity<User>()
                         .HasOptional(s => s.Profile) // Mark StudentAddress is optional for Student
