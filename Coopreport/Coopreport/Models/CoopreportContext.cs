@@ -13,10 +13,16 @@ namespace Coopreport.Models
         public DbSet<User> User { get; set; }
         public DbSet<Profile> Profile { get; set; }
 
+        public CoopreportContext() {
+            Database.SetInitializer<CoopreportContext>(new DropCreateDatabaseIfModelChanges<CoopreportContext>());
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
+            modelBuilder.Entity<Profile>()
+                .HasKey(e => e.UserID);
             // Configure StudentId as FK for StudentAddress
             modelBuilder.Entity<User>()
                         .HasOptional(s => s.Profile) // Mark StudentAddress is optional for Student

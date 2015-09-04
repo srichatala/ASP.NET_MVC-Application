@@ -11,6 +11,7 @@ namespace Coopreport.Models
     public class Profile
     {
         [Key]
+        [ForeignKey("User")]
         public int UserID { get; set; }
         [Required]
         [StringLength(10)]

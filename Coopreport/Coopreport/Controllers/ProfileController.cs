@@ -1,44 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Coopreport.Models;
-using System.Data.Entity;
 
 namespace Coopreport.Controllers
 {
-    [Authorize(Roles="Student")]
     public class ProfileController : Controller
     {
-        private CoopreportContext db_context = new CoopreportContext();
-        // GET: Profile
-        public ActionResult Index()
-        {
-            var p = db_context.Profile.ToList();
-            if (p.Count == 0)
-            {
-                return RedirectToAction("Create", "Profile");
-            }
-            return View(p);
-        }
+        private CoopreportContext db = new CoopreportContext();
 
+        // GET: Profile/Create
         public ActionResult Create()
         {
-            ViewBag.name = User.Identity.Name;
+            ViewBag.UserID = db.User.Where(x => x.Username == User.Identity.Name).FirstOrDefault().UserID;
+           // ViewBag.UserID = 1;
+           ViewBag.user = User.Identity.Name;
             return View();
         }
 
+        // POST: Profile/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        public ActionResult Create(Profile profile)
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "UserID,Username,FirstName,LastName,Email,PhoneNo,Course")] Profile profile)
         {
             if (ModelState.IsValid)
             {
-                db_context.Profile.Add(profile);
-                db_context.SaveChanges();
-                return RedirectToAction("Index", "Profile");
+                db.Profile.Add(profile);
+                db.SaveChanges();
+                return RedirectToAction("Index");
             }
-            return View();
+
+           // ViewBag.UserID = new SelectList(db.User, "UserID", "Username", profile.UserID);
+            return View(profile);
         }
+
     }
 }
