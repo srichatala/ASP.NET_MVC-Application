@@ -10,18 +10,18 @@ namespace Coopreport.Models
     {
         protected override void Seed(CoopreportContext context)
         {
-            var User = new List<User>{
-                new User{
-                    Username="300718283",
-                    Password="srinivas",
-                    Role="Student"
-                }
-            };
-            foreach (var item in User)
-            {
-                context.User.Add(item);
-            }
-            context.SaveChanges();
+            //var User = new List<User>{
+            //    new User{
+            //        Username="300718283",
+            //        Password="srinivas",
+            //        Role="Student"
+            //    }
+            //};
+            //foreach (var item in User)
+            //{
+            //    context.User.Add(item);
+            //}
+            //context.SaveChanges();
 
             //var profile = new List<Profile>{
             //    new Profile{

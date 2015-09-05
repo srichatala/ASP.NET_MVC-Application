@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using Coopreport.Models;
 using System.Web.Security;
+using System.Net;
+using System.Data.Entity;
 
 namespace Coopreport.Controllers
 {
@@ -12,9 +14,28 @@ namespace Coopreport.Controllers
     {
         private CoopreportContext db_context = new CoopreportContext();
         // GET: User
+        [Authorize(Roles = "Student")]
         public ActionResult Index()
         {
-            return View(db_context.User.ToList());
+            var userid = db_context.User.Where(x => x.Username == User.Identity.Name).FirstOrDefault().UserID;
+            User user = db_context.User.Find(userid);
+            if (user == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            return View(user);
+        }
+        [HttpPost]
+        [Authorize(Roles="Student")]
+        public ActionResult Index(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                db_context.Entry(user).State = EntityState.Modified;
+                db_context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(user);
         }
 
         public ActionResult Login()

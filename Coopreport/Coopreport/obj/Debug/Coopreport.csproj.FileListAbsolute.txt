@@ -21,7 +21,6 @@ D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\System.Web.WebPages.Razor.xml
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\Antlr3.Runtime.pdb
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\Newtonsoft.Json.xml
-D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\obj\Debug\Coopreport.csprojResolveAssemblyReference.cache
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\obj\Debug\Coopreport.dll
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\obj\Debug\Coopreport.pdb
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\EntityFramework.dll
@@ -36,3 +35,4 @@ D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin\Glimpse.Mvc5.dll
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\obj\Debug\Coopreport.Migrations.Initial.resources
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\obj\Debug\Coopreport.csproj.GenerateResource.Cache
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\obj\Debug\Coopreport.Migrations.user.resources

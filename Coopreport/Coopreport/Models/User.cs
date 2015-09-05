@@ -22,7 +22,17 @@ namespace Coopreport.Models
         public string Password { get; set; }
         [Required]
         public string Role { get; set; }
+        [DisplayName("First Name")]
+        public string FirstName { get; set; }
+        [DisplayName("Last Name")]
+        public string LastName { get; set; }
+        [DataType(DataType.EmailAddress)]
+        [DisplayName("Email ID")]
+        public string Email { get; set; }
+        [DisplayName("Phone Number")]
+        public string PhoneNo { get; set; }
+        [DisplayName("Course Name")]
+        public string Course { get; set; }
 
-        public virtual Profile Profile { get; set; }
     }
 }
