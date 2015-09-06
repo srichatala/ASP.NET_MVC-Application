@@ -7,7 +7,7 @@ using Coopreport.Models;
 
 namespace Coopreport.Controllers
 {
-    [Authorize(Roles="Student")]
+    [Authorize(Roles = "Student")]
     public class ReportController : Controller
     {
         private CoopreportContext db_context = new CoopreportContext();
@@ -15,8 +15,9 @@ namespace Coopreport.Controllers
         public ActionResult Index()
         {
             var reports = db_context.Report.ToList();
-            if (reports.Count == 0) {
-               ViewBag.msg = "So far, no reports submitted";
+            if (reports.Count == 0)
+            {
+                ViewBag.msg = "So far, no reports submitted";
             }
             return View(reports);
         }
@@ -29,6 +30,17 @@ namespace Coopreport.Controllers
             ViewBag.fullname = firstname + " " + lastname;
             ViewBag.name = User.Identity.Name;
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(Report report)
+        {
+            if(ModelState.IsValid){
+                db_context.Report.Add(report);
+                db_context.SaveChanges();
+                return Redirect("index");
+            }
+            return View(report);
         }
     }
 }
