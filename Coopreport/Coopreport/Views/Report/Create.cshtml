@@ -103,181 +103,462 @@
         <div class="form-group">
             @Html.LabelFor(model => model.LikeIntership, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.RadioButtonFor(model => model.LikeIntership, "Yes Definitely", new { selected = "true" })Yes Definitely
-
-                @Html.RadioButtonFor(model => model.LikeIntership, "false", new { id = "Yes" }) Yes
-
-                @Html.RadioButtonFor(model => model.LikeIntership, "false", new { id = "No" }) No
-                @Html.RadioButtonFor(model => model.LikeIntership, "false", new { id = "Some What" })Some What
-                @Html.RadioButtonFor(model => model.LikeIntership, "false", new { id = "Definitely Not" }) Definitely Not
+                <div class="radio-inline">
+                    @Html.RadioButton("LikeIntership", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("LikeIntership", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("LikeIntership", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("LikeIntership", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("LikeIntership", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.AdequatelyPrepared, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.AdequatelyPrepared, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.AdequatelyPrepared, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("AdequatelyPrepared", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("AdequatelyPrepared", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("AdequatelyPrepared", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("AdequatelyPrepared", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("AdequatelyPrepared", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Curriculum, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Curriculum, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Curriculum, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("Curriculum", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Curriculum", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Curriculum", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Curriculum", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Curriculum", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Expectation, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Expectation, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Expectation, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("Expectation", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Expectation", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Expectation", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Expectation", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Expectation", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Requirement, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Requirement, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Requirement, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("Requirement", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Requirement", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Requirement", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Requirement", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Requirement", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.AboutCoopAdvisor, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.AboutCoopAdvisor, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.AboutCoopAdvisor, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("AboutCoopAdvisor", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("AboutCoopAdvisor", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("AboutCoopAdvisor", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("AboutCoopAdvisor", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("AboutCoopAdvisor", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.AgencySupervisor, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.AgencySupervisor, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.AgencySupervisor, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("AgencySupervisor", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("AgencySupervisor", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("AgencySupervisor", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("AgencySupervisor", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("AgencySupervisor", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.SupervisorActive, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.SupervisorActive, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.SupervisorActive, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("SupervisorActive", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("SupervisorActive", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("SupervisorActive", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("SupervisorActive", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("SupervisorActive", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Attendance, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Attendance, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Attendance, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("Attendance", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Attendance", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Attendance", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Attendance", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Attendance", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Punctuality, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Punctuality, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Punctuality, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("Punctuality", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Punctuality", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Punctuality", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Punctuality", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Punctuality", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Structured, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Structured, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Structured, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("Structured", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Structured", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Structured", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Structured", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Structured", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.OverStructured, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.OverStructured, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.OverStructured, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("OverStructured", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("OverStructured", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("OverStructured", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("OverStructured", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("OverStructured", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Problems, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Problems, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Problems, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("Problems", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Problems", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Problems", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Problems", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Problems", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.HelpProblems, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.HelpProblems, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.HelpProblems, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("HelpProblems", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("HelpProblems", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("HelpProblems", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("HelpProblems", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("HelpProblems", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Learning, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Learning, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Learning, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("Learning", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Learning", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Learning", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Learning", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Learning", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Rewarding, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Rewarding, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Rewarding, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("Rewarding", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Rewarding", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Rewarding", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Rewarding", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Rewarding", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.ObjectiveEstablished, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ObjectiveEstablished, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.ObjectiveEstablished, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("ObjectiveEstablished", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("ObjectiveEstablished", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("ObjectiveEstablished", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("ObjectiveEstablished", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("ObjectiveEstablished", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Recommend, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Recommend, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Recommend, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("Recommend", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Recommend", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Recommend", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Recommend", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Recommend", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.SelfEvaluation, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.SelfEvaluation, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.SelfEvaluation, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("SelfEvaluation", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("SelfEvaluation", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("SelfEvaluation", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("SelfEvaluation", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("SelfEvaluation", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.DutiesPerformed, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.DutiesPerformed, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.DutiesPerformed, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("DutiesPerformed", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("DutiesPerformed", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("DutiesPerformed", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("DutiesPerformed", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("DutiesPerformed", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Comments, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Comments, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Comments, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("Comments", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Comments", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Comments", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Comments", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Comments", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Questionnaires, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Questionnaires, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Questionnaires, "", new { @class = "text-danger" })
+                <div class="radio-inline">
+                    @Html.RadioButton("Questionnaires", "Yes Definitely", true) Yes Definitely
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Questionnaires", "Yes", false) Yes
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Questionnaires", "No", false) No
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Questionnaires", "Some What", false) Some What
+                </div>
+                <div class="radio-inline">
+                    @Html.RadioButton("Questionnaires", "Definitely Not", false) Definitely Not
+                </div>
             </div>
         </div>
 
