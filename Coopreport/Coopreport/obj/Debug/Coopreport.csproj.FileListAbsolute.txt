@@ -36,3 +36,4 @@ D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\bin
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\obj\Debug\Coopreport.Migrations.Initial.resources
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\obj\Debug\Coopreport.csproj.GenerateResource.Cache
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\obj\Debug\Coopreport.Migrations.user.resources
+D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport\obj\Debug\Coopreport.csprojResolveAssemblyReference.cache
