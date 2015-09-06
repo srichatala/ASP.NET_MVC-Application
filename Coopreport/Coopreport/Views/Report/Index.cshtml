@@ -9,6 +9,13 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
+@if (ViewBag.msg != null)
+{
+    <h4 class="text-danger">@ViewBag.msg</h4>
+}
+else
+{ 
 <table class="table">
     <tr>
         <th>
@@ -67,3 +74,4 @@
 }
 
 </table>
+}
