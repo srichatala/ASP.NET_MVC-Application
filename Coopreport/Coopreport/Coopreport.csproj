@@ -145,6 +145,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
@@ -158,13 +159,22 @@
     <Compile Include="Migrations\201509050529127_user.Designer.cs">
       <DependentUpon>201509050529127_user.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201509060409345_report.cs" />
+    <Compile Include="Migrations\201509060409345_report.Designer.cs">
+      <DependentUpon>201509060409345_report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CoopreportContext.cs" />
     <Compile Include="Models\CoopreportInitializer.cs" />
+    <Compile Include="Models\Report.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Coopreport.mdf" />
+    <Content Include="App_Data\Coopreport_log.ldf">
+      <DependentUpon>Coopreport.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -204,9 +214,10 @@
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Register.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Report\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="Views\Reports\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -221,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201509050529127_user.resx">
       <DependentUpon>201509050529127_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509060409345_report.resx">
+      <DependentUpon>201509060409345_report.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

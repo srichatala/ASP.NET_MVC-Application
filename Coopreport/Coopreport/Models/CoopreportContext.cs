@@ -11,6 +11,7 @@ namespace Coopreport.Models
     public class CoopreportContext : DbContext
     {
         public DbSet<User> User { get; set; }
+        public DbSet<Report> Report { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
