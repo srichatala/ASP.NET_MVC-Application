@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="itvillage" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Ms\.Net\\MVC_Applications\\MVC\\ASP\.NET_MVC-Application\\Coopreport\\Coopreport\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Ms\.Net\\MVC_Applications\\MVC\\ASP\.NET_MVC-Application\\Coopreport\\Coopreport\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="CoopreportContext-Web.config Connection String" description="" value="Data Source=tcp:enscqy5uws.database.windows.net,1433;Initial Catalog=coopreport;Integrated Security=False;User ID=itvillage@enscqy5uws;Password=Coop123!@#;Connect Timeout=30;Encrypt=True" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Ms\.Net\\MVC_Applications\\MVC\\ASP\.NET_MVC-Application\\Coopreport\\Coopreport\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CoopreportContext']/@connectionString" />
+  </parameter>
+</parameters>

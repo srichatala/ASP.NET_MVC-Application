@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="CoopreportContext-Web.config Connection String" description="CoopreportContext Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:enscqy5uws.database.windows.net,1433;Database=coopreport;User ID=itvillage@enscqy5uws;Password=Coop123!@#;Trusted_Connection=False;Encrypt=True;Connection Timeout=30" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Ms\.Net\\MVC_Applications\\MVC\\ASP\.NET_MVC-Application\\Coopreport\\Coopreport\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CoopreportContext']/@connectionString" />
+  </parameter>
+</parameters>
