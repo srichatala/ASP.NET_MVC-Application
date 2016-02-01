@@ -1,4 +1,3 @@
-|travis|_ 
 
 # ASP.NET_MVC-Application
 
