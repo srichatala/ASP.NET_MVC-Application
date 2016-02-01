@@ -1,2 +1,4 @@
 language: csharp
 solution: Coopreport.sln
+install:
+  - nuget restore Coopreport.sln
