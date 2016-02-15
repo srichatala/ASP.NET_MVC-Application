@@ -12,6 +12,12 @@ namespace Coopreport.Controllers
 {
     public class UserController : Controller
     {
+        List<User> user_Info = new List<User>();
+
+        public UserController() { }
+        public UserController(List<User> user_Info) {
+            this.user_Info = user_Info;
+        }
         private CoopreportContext db_context = new CoopreportContext();
         // GET: User
         [Authorize(Roles = "Student")]
@@ -41,6 +47,10 @@ namespace Coopreport.Controllers
         public ActionResult Login()
         {
             return View();
+        }
+
+        public IEnumerable<User> GetUsers() {
+            return user_Info;
         }
 
         [HttpPost]

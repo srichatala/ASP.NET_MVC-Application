@@ -33,5 +33,3 @@ D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tes
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\Glimpse.EF5.dll
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\Glimpse.EF6.dll
 D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\Glimpse.Mvc5.dll
-D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\Ms.Net\MVC_Applications\MVC\ASP.NET_MVC-Application\Coopreport\Coopreport.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
